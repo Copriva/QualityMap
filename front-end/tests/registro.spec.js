@@ -39,13 +39,13 @@ test('validar data', async ({ page }) => {
 // verificação da validação do campo Data
   const Day =  page.locator('select[name="DateOfBirthDay"]');
   await expect(Day).toHaveValue('12');
-
+// verificação da validação do campo Mês
   const Month =  page.locator('select[name="DateOfBirthMonth"]');
   await expect(Month).toHaveValue('10');
-
+// verificação da validação do campo Ano
   const Year =  page.locator('select[name="DateOfBirthYear"]');
   await expect(Year).toHaveValue('1995');
 });
-  
+
 
 
